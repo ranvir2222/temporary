@@ -11,6 +11,7 @@ mka bacon
 # Trigger zone
 # 220214052021 - dirty
 # 205115052021 - dirty
+# 021616052021 - dirty
 
 # upload rom los needs *UNOFFICIAL*
 rclone copy out/target/product/daisy/*UNOFFICIAL*.zip cirrus:$(grep unch $CIRRUS_WORKING_DIR/build_rom.sh -m 1 | cut -d _ -f 2 | cut -d - -f 1) -P
