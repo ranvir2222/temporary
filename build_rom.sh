@@ -5,8 +5,6 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # Test setup
 rm -rf out
-rm -rf device/xiaomi/vayu
-rm -rf vendor/xiaomi/vayu
 
 # build rom
 source build/envsetup.sh
