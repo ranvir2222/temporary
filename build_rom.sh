@@ -5,7 +5,8 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # build rom
 #build/envsetup.sh
-./rom-build.sh X00TD
+#lunch aosp_X00TD-user
+./rom-build.sh X00TD -t user
 
 # upload rom
 rclone copy out/target/product/X00TD/AOSPA*.zip cirrus:X00TD -P
