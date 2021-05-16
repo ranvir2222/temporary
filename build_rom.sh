@@ -6,6 +6,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 # build rom
 #build/envsetup.sh
 #lunch aosp_X00TD-user
+export GLOBAL_THINLTO=true
 ./rom-build.sh X00TD -t user
 
 # upload rom
