@@ -1,5 +1,5 @@
 # sync rom
-repo init -u https://github.com/PixelExperience/manifest -b eleven --depth=1 -g default,-device,-mips,-darwin,-notdefault
+repo init -u https://github.com/PixelPlusUI/manifest -b eleven --depth=1 -g default,-device,-mips,-darwin,-notdefault
 
 git clone https://github.com/cArN4gEisDeD/local_manifest --depth=1 -b main .repo/local_manifests
 
