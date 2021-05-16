@@ -32,4 +32,4 @@ lunch potato_RMX1941-userdebug
 brunch RMX1941
 
 # upload
-rclone copy out/target/product/RMX1941/potato_RMX1941*Community.zip cirrus:RMX1941 -P 
+rclone copy out/target/product/RMX1941/potato_RMX1941*Community.zip cirrus:RMX1941 -P
