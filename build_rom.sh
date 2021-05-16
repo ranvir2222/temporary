@@ -3,12 +3,6 @@ repo init --depth=1 --no-repo-verify -u git://github.com/AOSPA/manifest.git -b r
 git clone https://github.com/derp-sdm660-common/Local-Manifests.git --depth 1 -b aospa .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
-# patches
-cd vendor/pa
-git fetch https://gerrit.aospa.co/AOSPA/android_vendor_pa refs/changes/38/18538/2 && git cherry-pick FETCH_HEAD
-git fetch https://gerrit.aospa.co/AOSPA/android_vendor_pa refs/changes/36/18036/1 && git cherry-pick FETCH_HEAD
-cd ../..
-
 # build rom
 #build/envsetup.sh
 #lunch aosp_X00TD-user
