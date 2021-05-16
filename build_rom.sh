@@ -4,6 +4,7 @@ git clone https://github.com/derp-sdm660-common/Local-Manifests.git --depth 1 -b
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # build rom
+#build/envsetup.sh
 ./rom-build.sh X00TD
 
 # upload rom
