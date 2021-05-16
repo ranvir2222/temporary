@@ -5,7 +5,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # build rom
 source build/envsetup.sh
-lunch corvus_mido-userdebug
+lunch corvus_mido-user
 mka corvus
 
 # upload rom
