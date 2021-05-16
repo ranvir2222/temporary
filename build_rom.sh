@@ -9,5 +9,5 @@ lunch lineage_RMX1971-userdebug
 mka bacon -j$(nproc --all)
 
 # upload rom
-rclone copy out/target/product/RMX1971/crDroid*.zip cirrus:RMX1971 -P
+rclone copy out/target/product/RMX1971/crDroid*.zip cirrus:RMX1971 -P 
  
