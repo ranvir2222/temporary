@@ -1,9 +1,9 @@
 # sync rom
-repo init --depth=1 -u https://github.com/PixelPlusUI/manifest -b eleven -g default,-device,-mips,-darwin,-notdefault
+repo init -u https://github.com/PotatoProject/manifest -b dumaloo-release --depth=1 -g default,-device,-mips,-darwin,-notdefault
 
 git clone https://github.com/cArN4gEisDeD/local_manifest --depth=1 -b main .repo/local_manifests
 
-repo sync -c -j8 --force-sync --no-clone-bundle --no-tags
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # patches
 #cd external/selinux
@@ -28,8 +28,8 @@ repo sync -c -j8 --force-sync --no-clone-bundle --no-tags
 
 # build
 . build/envsetup.sh
-lunch aosp_RMX1941-userdebug
-mka bacon
+lunch potato_RMX1941-userdebug
+brunch RMX1941
 
 # upload
 rclone copy out/target/product/RMX1941/*UNOFFICIAL*.zip cirrus:RMX1941 -P
