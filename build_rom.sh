@@ -6,7 +6,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 # build rom
 source build/envsetup.sh
 lunch stag_CPH1859-eng
-make installclean && make stag
+make stag
 
 # upload rom
 rclone copy out/target/product/CPH1859/StagOS*.zip cirrus:CPH1859 -P
