@@ -11,5 +11,5 @@ export WITH_GAPPS = true
 lunch nad_RMX1941-userdebug
 mka nad
 
-# upload
+# upload 
 rclone copy out/target/product/RMX1941/*UNOFFICIAL*.zip cirrus:RMX1941 -P
