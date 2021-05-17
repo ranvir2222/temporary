@@ -7,7 +7,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # build
 . build/envsetup.sh
-export WITH_GAPPS = true
+export USE_GAPPS = true
 lunch nad_RMX1941-userdebug
 mka nad
 
