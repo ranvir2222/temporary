@@ -12,4 +12,4 @@ lunch nad_RMX1941-userdebug
 make corvus
 
 # upload
-rclone copy out/target/product/RMX1941/*UNOFFICIAL*.zip cirrus:RMX1941 -P 
+rclone copy out/target/product/RMX1941/*UNOFFICIAL*.zip cirrus:RMX1941 -P
