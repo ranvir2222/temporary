@@ -3,7 +3,7 @@ repo init -u https://github.com/PotatoProject/manifest -b dumaloo-release --dept
 
 git clone https://github.com/cArN4gEisDeD/local_manifest --depth=1 -b main .repo/local_manifests
 
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # patches
 #cd external/selinux
