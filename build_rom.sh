@@ -26,6 +26,9 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 #patch -p1 < *.patch
 #cd ../../../..
 
+# Gapps
+export WITH_GAPPS = true
+
 # build
 . build/envsetup.sh
 lunch potato_RMX1941-userdebug 
