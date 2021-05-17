@@ -10,4 +10,3 @@ make bacon
 
 # upload rom
 rclone copy out/target/product/tissot/ShapeShiftOS*.zip cirrus:tissot -P
-
