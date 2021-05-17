@@ -32,4 +32,4 @@ lunch corvus_RMX1941-userdebug
 make corvus
 
 # upload
-rclone copy out/target/product/RMX1941/*Unofficial*.zip cirrus:RMX1941 -P  
+rclone copy out/target/product/RMX1941/*Unofficial*.zip cirrus:RMX1941 -P 
