@@ -28,7 +28,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # build
 . build/envsetup.sh
-lunch potato_RMX1941-userdebug
+lunch potato_RMX1941-userdebug 
 brunch RMX1941
 
 # upload
