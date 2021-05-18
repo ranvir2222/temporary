@@ -6,6 +6,7 @@ repo sync --force-sync --no-tags --no-clone-bundle
 # build rom
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
+
 lunch aosip_pine-userdebug
 time m kronic
 
