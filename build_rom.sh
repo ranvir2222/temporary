@@ -7,11 +7,11 @@ sudo apt install wget
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 #qcom/common patch
-cd device/qcom/common && wget https://github.com/AOSPA/android_device_qcom_common/commit/832de59190dd996820281e78dd4afd55fe13dd9c.patch && patch -p1 < *.patch && cd -
+cd device/qcom/common && rm -rf *.patch && wget https://github.com/AOSPA/android_device_qcom_common/commit/832de59190dd996820281e78dd4afd55fe13dd9c.patch && patch -p1 < *.patch && cd -
 
 #vendor patch
-cd vendor/pa && wget https://github.com/AOSPA/android_vendor_pa/commit/f0bfe716960ee8498d6a9442d734615909163d6b.patch && patch -p1 < *.patch && cd -
-cd vendor/pa && wget https://github.com/AOSPA/android_vendor_pa/commit/426285c67e2a90b4f880975267eff340de491867.patch && patch -p1 < *.patch && cd -
+cd vendor/pa && rm -rf *.patch && wget https://github.com/AOSPA/android_vendor_pa/commit/f0bfe716960ee8498d6a9442d734615909163d6b.patch && patch -p1 < *.patch && cd -
+cd vendor/pa && rm -rf *.patch && wget https://github.com/AOSPA/android_vendor_pa/commit/426285c67e2a90b4f880975267eff340de491867.patch && patch -p1 < *.patch && cd -
 
 # build rom
 #build/envsetup.sh
