@@ -1,12 +1,12 @@
 # sync rom
-repo init --depth=1 -u git://github.com/AospExtended/manifest.git -b 11.x -g default,-device,-mips,-darwin,-notdefault
-git clone https://github.com/Apon77Lab/android_.repo_local_manifests.git --depth 1 -b aex .repo/local_manifests
+repo init -u https://github.com/Wave-Project/manifest -b r --depth=1 -g default,-device,-mips,-darwin,-notdefault
+git clone https://github.com/cArN4gEisDeD/local_manifest --depth=1 -b main .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # build rom
 source build/envsetup.sh
-lunch aosp_mido-user
-m aex
+lunch wave_RMX1941-userdebug
+brunch RMX1941
 
 # upload rom
-rclone copy out/target/product/mido/*.zip cirrus:mido -P
+rclone copy out/target/product/RMX1941/*UNOFFICIAL*.zip cirrus:RMX1941 -P
