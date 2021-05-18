@@ -9,4 +9,4 @@ lunch stag_CPH1859-eng
 make stag
 
 # upload rom
-rclone copy out/target/product/CPH1859/*.zip cirrus:CPH1859 -P
+rclone copy out/target/product/CPH1859/StagOS*.zip cirrus:CPH1859 -P
