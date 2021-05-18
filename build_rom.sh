@@ -6,7 +6,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 # build rom
 source build/envsetup.sh
 lunch lineage_olivelite-userdebug 
-mka bacon
+mka bacon 
 
 # upload rom
 rclone copy out/target/product/olivalite/*UNOFFICIAL*.zip cirrus:olivelite -P
