@@ -1,12 +1,12 @@
 # sync rom
-repo init --depth=1 -u git://github.com/AospExtended/manifest.git -b 11.x -g default,-device,-mips,-darwin,-notdefault
-git clone https://github.com/Apon77Lab/android_.repo_local_manifests.git --depth 1 -b aex .repo/local_manifests
+repo init -u git://github.com/LineageOS/android.git -b lineage-18.1 --depth=1 -g default,-device,-mips,-darwin,-notdefault
+git clone https://github.com/cArN4gEisDeD/local_manifest.git -b olivelite --depth 1 .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # build rom
 source build/envsetup.sh
-lunch aosp_mido-user
-m aex
+lunch lineage_olivelite-userdebug
+mka bacon
 
 # upload rom
-rclone copy out/target/product/mido/*.zip cirrus:mido -P
+rclone copy out/target/product/olivalite/*UNOFFICIAL*.zip cirrus:olivelite -P
