@@ -13,8 +13,8 @@ cd ../..
 # build
 . build/envsetup.sh
 lunch aosp_RMX1941-userdebug
+#export WITH_GAPPS=true
 mka bacon -j$(nproc --all)
-# Pixel Experience
 
 # upload build
 rclone copy out/target/product/RMX1941/*UNOFFICIAL*.zip cirrus:RMX1941 -P
