@@ -5,7 +5,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # build rom
 source build/envsetup.sh
-lunch lineage_olivelite-userdebug
+lunch lineage_olivelite-userdebug 
 mka bacon
 
 # upload rom
