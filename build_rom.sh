@@ -27,7 +27,7 @@ repo sync -c -j8 --force-sync --no-clone-bundle --no-tags
 #cd ../../../..
 
 # build
-. build/envsetup.sh
+. build/envsetup.sh 
 lunch aosp_RMX1941-userdebug
 mka bacon
 
