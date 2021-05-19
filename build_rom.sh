@@ -7,7 +7,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 # build rom
 source build/envsetup.sh
 lunch aosp_pine-userdebug
-make bacon
+mka bacon
 
 # upload rom
 rclone copy out/target/product/pine/*.zip cirrus:pine -P
