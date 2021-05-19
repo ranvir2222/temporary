@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 
@@ -13,7 +14,6 @@ cd ../..
 # build
 . build/envsetup.sh
 lunch aosp_RMX1941-userdebug
-#export WITH_GAPPS=true
 mka bacon -j$(nproc --all)
 
 # upload build
