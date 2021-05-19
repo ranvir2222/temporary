@@ -8,7 +8,7 @@ source build/envsetup.sh
 # oof 
 export ALLOW_MISSING_DEPENDENCIES=true
 lunch aosp_pine-userdebug
-make bacon -j8
+make bacon
 
 # upload rom
 rclone copy out/target/product/pine/*.zip cirrus:pine -P
