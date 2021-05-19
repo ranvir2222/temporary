@@ -28,7 +28,7 @@ repo sync -c -j8 --force-sync --no-clone-bundle --no-tags
 
 # build
 . build/envsetup.sh 
-lunch aosp_RMX1941-userdebug
+lunch aosp_RMX1941-userdebug 
 mka bacon
 
 # upload
