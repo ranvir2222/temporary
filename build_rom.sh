@@ -5,10 +5,10 @@ repo sync --force-sync --no-tags --no-clone-bundle
 
 # build rom
 source build/envsetup.sh
-# oof ;-;
+# oof 
 export ALLOW_MISSING_DEPENDENCIES=true
 lunch aosip_pine-userdebug
 time m kronic
 
 # upload rom
-rclone copy out/target/product/pine/AOSiP*.zip cirrus:pine -P
+rclone copy out/target/product/pine/*.zip cirrus:pine -P
