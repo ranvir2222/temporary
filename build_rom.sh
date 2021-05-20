@@ -7,8 +7,6 @@ git clone https://github.com/P-Salik/local_manifest --depth=1 -b test .repo/loca
 
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
-
-
 # build
 . build/envsetup.sh
 lunch lineage_RMX1941-userdebug
