@@ -5,9 +5,8 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # build rom
 . build/envsetup.sh
-export WITH_GAPPS = true
 lunch havoc_RMX1971-userdebug
-mka bacon
+mka bacon -j$(nproc --all)
 
 # upload rom
 rclone copy out/target/product/RMX1971/Havoc-OS*.zip cirrus:RMX1971 -P
