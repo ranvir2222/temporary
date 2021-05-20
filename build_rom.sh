@@ -9,4 +9,4 @@ lunch potato_ysl-userdebug
 brunch ysl
 
 # upload rom
-rclone copy out/target/product/ysl/potato_ysl*.zip cirrus:ysl -P 
+rclone copy out/target/product/ysl/*.zip cirrus:ysl -P 
