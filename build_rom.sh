@@ -7,6 +7,9 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # Clone MSM8996 Q Hals ( Needed for Mi-msm8937 Devices)
 curl -LO https://raw.githubusercontent.com/MinatiScape/scripts/main/wave.sh && bash wave.sh
+
+# Apply Patch
+cd device/xiaomi/msm8937-common && curl -LO https://raw.githubusercontent.com/MinatiScape/scripts/main/selinux.patch && git am selinux.patch && cd ../../..
 # Build ROM
 . build/envsetup.sh
 lunch wave_tiare-userdebug
