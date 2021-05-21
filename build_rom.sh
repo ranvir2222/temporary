@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # sync rom
 repo init --depth=1 -u git://github.com/CipherOS/android_manifest.git -b eleven -g default,-device,-mips,-darwin,-notdefault
 
