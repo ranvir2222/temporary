@@ -7,7 +7,8 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # Build ROM
 . build/envsetup.sh
-lunch wave_tiare-userdebug
+brunch tiare-userdebug
+brunch tiare-userdebug
 mka bacon -j$(nproc --all)
 
 # Upload build
