@@ -5,6 +5,8 @@ git clone https://github.com/MinatiScape/local_manifest.git --depth=1 -b main .r
 
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
+# Clone MSM8996 Q Hals ( Needed for Mi-msm8937 Devices)
+curl -LO https://raw.githubusercontent.com/MinatiScape/scripts/main/wave.sh && bash wave.sh
 # Build ROM
 . build/envsetup.sh
 lunch wave_tiare-userdebug
