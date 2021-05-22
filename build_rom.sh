@@ -9,6 +9,6 @@ lunch descendant_RMX1941-userdebug
 mka descendant
       
 # upload rom
-rclone copy out/target/product/RMX1941/*UNOFFICIAL*.zip cirrus:RMX1941 -P
+rclone copy out/target/product/RMX1941/descendant_RMX1941*Community.zip cirrus:RMX1941 -P
    
       
