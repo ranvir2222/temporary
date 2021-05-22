@@ -3,9 +3,6 @@ repo init --depth=1 -u git://github.com/LineageOS/android.git -b lineage-18.1 -g
 git clone https://github.com/kardebayan/local_manifests.git --depth 1 -b r11 .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
-# Patch
-cd external/selinux && curl -L http://ix.io/2FhM > sasta.patch && git am sasta.patch && cd ../..
-
 # build rom
 source build/envsetup.sh
 lunch lineage_CPH1859-eng
