@@ -5,6 +5,9 @@ git clone https://github.com/MinatiScape/local_manifests.git --depth=1 -b main .
 
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
+# Apply Patch
+cd build/make && curl -LO https://raw.githubusercontent.com/MinatiScape/scripts/main/apk.patch && git am apk.patch && cd ../..
+
 # Build Lineage
 . build/envsetup.sh
 lunch lineage_olives-userdebug
