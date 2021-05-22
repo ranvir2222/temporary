@@ -5,8 +5,8 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # build rom
 source build/envsetup.sh
-lunch potato_ysl-user
-brunch ysl
+lunch potato_ysl-userdebug
+brunch ysl -j$(nproc --all)
 
 # upload rom
 rclone copy out/target/product/ysl/*.zip cirrus:ysl -P 
