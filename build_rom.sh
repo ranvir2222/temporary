@@ -1,7 +1,7 @@
 # clone repo
 repo init --depth=1 -u git://github.com/CipherOS/android_manifest.git -b eleven -g default,-device,-mips,-darwin,-notdefault
 
-git clone https://github.com/P-Salik/local_manifest --depth=1 -b test .repo/local_manifests
+git clone https://github.com/P-Salik/local_manifest --depth=1 -b exp .repo/local_manifests
 
 # sync
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
