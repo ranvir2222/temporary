@@ -9,6 +9,5 @@ export WITH_GAPPS=true
 lunch stag_RMX1805-userdebug
 mka stag
 
-
 # upload rom
 rclone copy out/target/product/RMX1805/StagOS*RMX1805*.zip cirrus:RMX1805 -P
